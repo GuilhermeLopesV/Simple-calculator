@@ -41,7 +41,7 @@ while True:
     else:
         print('Nunca deveria chegar aqui.')
 
-    close = input('Quer fechar? [s]im: ').lower().startswith('s')
+    close = input('Quer fechar? [s]im: ').lower()
 
     if close == 's':
         break
