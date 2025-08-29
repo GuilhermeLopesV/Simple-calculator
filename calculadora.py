@@ -1,47 +1,47 @@
 while True:
-    numero_1 = input('Digite um número: ')
-    numero_2 = input('Digite outro número: ')
-    operador = input('Digite o operador (+-/*): ')
+    number_1 = input('Digite um número: ')
+    number_2 = input('Digite outro número: ')
+    operator = input('Digite o operador (+-/*): ')
 
-    numeros_validos = None
+    valid_numbers = None
     num_1_float = 0
     num_2_float = 0
 
     try:
-        num_1_float = float(numero_1)
-        num_2_float = float(numero_2)
-        numeros_validos = True
+        num_1_float = float(number_1)
+        num_2_float = float(number_2)
+        valid_numbers = True
     except ValueError:
-        numeros_validos = None
+        valid_numbers = None
 
-    if numeros_validos is None:
+    if valid_numbers is None:
         print('Um ou ambos os números digitados são inválidos.')
         continue
 
-    operadores_permitidos = '+-/*'
+    allowed_operators = '+-/*'
 
-    if operador not in operadores_permitidos:
+    if operator not in allowed_operators:
         print('Operador inválido.')
         continue
 
-    if len(operador) > 1:
+    if len(operator) > 1:
         print('Digite apenas um operador.')
         continue
 
     print('Realizando sua conta. Confira o resultado abaixo:')
 
-    if operador == '+':
+    if operator == '+':
         print(f'{num_1_float}+{num_2_float}=', num_1_float + num_2_float)
-    elif operador == '-':
+    elif operator == '-':
         print(f'{num_1_float}-{num_2_float}=', num_1_float - num_2_float)
-    elif operador == '/':
+    elif operator == '/':
         print(f'{num_1_float}/{num_2_float}=', num_1_float / num_2_float)
-    elif operador == '*':
+    elif operator == '*':
         print(f'{num_1_float}*{num_2_float}=', num_1_float * num_2_float)
     else:
         print('Nunca deveria chegar aqui.')
 
-    sair = input('Quer sair? [s]im: ').lower().startswith('s')
+    close = input('Quer fechar? [s]im: ').lower().startswith('s')
 
-    if sair is True:
+    if close == 's':
         break
