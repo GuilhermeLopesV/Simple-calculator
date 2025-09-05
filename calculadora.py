@@ -1,24 +1,23 @@
 while True:
-    number_1 = input('Digite um número: ')
-    number_2 = input('Digite outro número: ')
-    operator = input('Digite o operador (+-/*): ')
-
-    valid_numbers = None
-    num_1_float = 0
-    num_2_float = 0
-
     try:
+        number_1 = input('Digite um número: ')
+        operator = input('Digite o operador (+-/*): ')
+        number_2 = input('Digite outro número: ')
         num_1_float = float(number_1)
         num_2_float = float(number_2)
         valid_numbers = True
     except ValueError:
-        valid_numbers = None
-
-    if valid_numbers is None:
         print('Um ou ambos os números digitados são inválidos.')
+        continue
+    except ZeroDivisionError:
+        print('Não é possível dividir por zero.')
         continue
 
     allowed_operators = '+-/*'
+    soma = num_2_float + num_1_float
+    subtracao = num_2_float - num_1_float
+    multiplicacao = num_2_float * num_1_float
+    divisao = num_1_float / num_2_float
 
     if operator not in allowed_operators:
         print('Operador inválido.')
@@ -31,17 +30,18 @@ while True:
     print('Realizando sua conta. Confira o resultado abaixo:')
 
     if operator == '+':
-        print(f'{num_1_float}+{num_2_float}=', num_1_float + num_2_float)
+        print(f'{num_1_float}+{num_2_float}=', soma)
     elif operator == '-':
-        print(f'{num_1_float}-{num_2_float}=', num_1_float - num_2_float)
+        print(f'{num_1_float}-{num_2_float}=', subtracao)
     elif operator == '/':
-        print(f'{num_1_float}/{num_2_float}=', num_1_float / num_2_float)
+        print(f'{num_1_float}/{num_2_float}=', f'{divisao:.2f}')
     elif operator == '*':
-        print(f'{num_1_float}*{num_2_float}=', num_1_float * num_2_float)
+        print(f'{num_1_float}*{num_2_float}=', multiplicacao)
     else:
         print('Nunca deveria chegar aqui.')
 
-    close = input('Quer fechar? [s]im: ').lower()
+    close = input('Quer fechar? [s]im ou [n]ão: ').lower()
 
     if close == 's':
+        print('Fechando a calculadora.')
         break
