@@ -1,5 +1,5 @@
 def calculator():
-    while True:
+     while True:
         try:
             number_1 = float(input('Digite um número: '))
             operator = input('Digite o operador (+-/*): ').strip()
@@ -32,6 +32,5 @@ def calculator():
         if close == 's':
             print('Fechando a calculadora...')
             break
-
 
 calculator()
