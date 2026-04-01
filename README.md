@@ -1,35 +1,30 @@
-# 🧮 Simple Calculator in Python
+🧮 Calculadora Simples em Python
 
-This project is a **simple calculator in Python**, developed as part of my learning journey in **programming logic** and Python fundamentals.  
-The calculator allows the user to input two numbers, choose an operator, and receive the result of the operation.
+Este projeto é uma calculadora simples em Python, desenvolvida como parte da minha jornada de aprendizado em lógica de
+programação e fundamentos da linguagem Python.
+A calculadora permite que o usuário insira dois números, escolha um operador e receba o resultado da operação.
 
----
+🚀 O que aprendi com este projeto
 
-## 🚀 What I Learned from This Project
-While developing this calculator, I practiced and learned important programming concepts such as:
+Durante o desenvolvimento desta calculadora, pratiquei e aprendi conceitos importantes como:
 
-- **Input and output handling** with the `input()` function.  
-- **Type conversion** (strings to numbers) using `float()`.  
-- **Error handling** with `try/except` to deal with invalid inputs.  
-- **Looping with `while True`** to keep the program running until the user decides to exit.  
-- **Conditional structures (`if/elif/else`)** to validate operators and perform the correct calculation.  
-- **Good programming practices**, such as validating inputs, checking operators, and providing clear feedback to the user.  
+Entrada e saída de dados com a função input().
+Conversão de tipos (strings para números) utilizando float().
+Tratamento de erros com try/except para lidar com entradas inválidas.
+Laços de repetição com while True para manter o programa em execução até o usuário decidir sair.
+Estruturas condicionais (if/elif/else) para validar operadores e realizar o cálculo correto.
+Boas práticas de programação, como validação de dados, verificação de operadores e mensagens claras para o usuário.
+⚙️ Funcionalidades
+Operações básicas:
+➕ Adição
+➖ Subtração
+✖️ Multiplicação
+➗ Divisão
+Validação de entrada (aceita apenas números).
+Validação de operadores (somente +, -, *, /).
+Execução contínua até o usuário optar por sair.
+▶️ Como executar
 
----
+Clone este repositório:
 
-## ⚙️ Features
-- Basic operations:
-  - ➕ Addition  
-  - ➖ Subtraction  
-  - ✖️ Multiplication  
-  - ➗ Division  
-- Input validation (accepts only numbers).  
-- Operator validation (only `+`, `-`, `*`, `/`).  
-- Continuous loop until the user chooses to exit.  
-
----
-
-## ▶️ How to Run
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/simple-calculator.git
+git clone https://github.com/SEU-USUARIO/simple-calculator.git
