@@ -3,5 +3,5 @@ def start():
     print('      CALCULADORA PYTHON')
     print('=' * 40)
 
-def clear_screen():
+def organized_terminal():
     print('=' * 40)
